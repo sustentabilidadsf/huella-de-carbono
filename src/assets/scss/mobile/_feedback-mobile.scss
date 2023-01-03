@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1024px) {
+  .feedback-area {
+    width: auto;
+    padding: 0 20px;
+    .image-container {
+      width: 100%;
+      max-width: 350px;
+    }
+    .information-container {
+      .primary-text {
+        font-size: 1.3em;
+      }
+      .progress-bar-container {
+        height: 37px;
+        .progress-indicator {
+          p {
+            font-size: 12px;
+          }
+        }
+        .form-progress-bar {
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .feedback-area {
+    width: auto;
+    padding: 0 20px;
+    .image-container {
+      width: 50%;
+    }
+    .information-container {
+      .primary-text {
+        font-size: 1.1em;
+      }
+      .progress-bar-container {
+        height: 37px;
+        .progress-indicator {
+          p {
+            font-size: 12px;
+          }
+        }
+        .form-progress-bar {
+          height: 10px;
+        }
+      }
+    }
+  }
+}

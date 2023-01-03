@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1024px) {
+  .compensation-details-container {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .compensation-details-container {
+    font-size: 14px;
+    .amountHC {
+      font-size: 1.4em;
+    }
+    .donation-payment-container {
+      font-size: .9em;
+  }
+  }
+  .compensation-description {
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      height: 120px;
+      margin-bottom: 1em;
+      order: 1;
+    }
+    p{
+      order: 2;
+    }
+  }
+  .compensation-details-container .items-included-container {
+    flex-wrap: wrap;
+    .item {
+      align-items: flex-start;
+      width: 100%;
+      img {
+        height: 30px;
+      }
+      margin-bottom: 1em;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

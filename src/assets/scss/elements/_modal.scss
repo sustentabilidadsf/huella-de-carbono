@@ -1,0 +1,65 @@
+.modal-dialog {
+  max-width: 700px;
+  margin: 10% auto 0;
+  .modal-body {
+    padding: 1.5em 2.5em;
+  }
+}
+
+.modal-tips-content {
+  display: flex;
+  .image-container {
+    width: 300px;
+    margin: auto 50px auto 0;
+  }
+  .text-container {
+    font-family: 'Maven Pro', sans-serif;
+    color: grey;
+    font-size: 1.1em;
+    .primary-text {
+      color: #b8cc6a;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 15px;
+        &::before {
+          content: "\2022";
+          color: #b8cc6a;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+          transform: scale(1.8) translateX(-4px);
+        }
+      }
+    }
+  }
+}
+
+.details-carbonFootprint-result {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  .icon-info {
+    height: 35px;
+    margin-bottom: 20px;
+  }
+  .anual-value {
+    font-size: 1.2em;
+  }
+  .huella-result-text {
+    color: grey;
+    font-weight: 700;
+    font-size: 2.2em;
+  }
+  .equivalent-result-text {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #d9492e;
+    margin: 10px 0 20px;
+  }
+}

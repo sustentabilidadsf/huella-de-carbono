@@ -1,0 +1,80 @@
+@media only screen and (max-width: 700px) {
+  .steps-container-indicator {
+    box-shadow: inset 0 0 0 22px white;
+    .active {
+      height: 45px;
+      width: 45px;
+    }
+  }
+  .donationModalContainer {
+    font-size: 14px;
+    .text-container {
+      font-size: 14px;
+    }
+  }
+
+  .step1 .paid-options-container {
+    flex-direction: column;
+    .paid-option {
+      padding: 0 .5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .steps-container-indicator {
+    display: none;
+  }
+  .donationModalContainer {
+    .text-container {
+      padding: 0 1.5em;
+    }
+    .buttons-container {
+      .main-button {
+        padding: .2em 1.2em;
+      }
+    }
+  }
+
+  .step1 {
+    display: none;
+  }
+
+  .step2.QRpaid {
+    display: none;
+  }
+
+  .step2 {
+    .title {
+      padding-top: 2em;
+    }
+  }
+
+  .step2.bankpaid {
+    margin-top: 2.5em;
+    .paid-container {
+      flex-wrap: wrap;
+    }
+    .buttons-container {
+      .main-button.back {
+        display: none;
+      }
+    }
+  }
+  .step3{
+    margin-top: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .step3 {
+    .buttons-container {
+      margin-top: 1em;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main-button.back {
+      margin-bottom: 1em;
+    }
+  }
+}

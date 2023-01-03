@@ -1,0 +1,417 @@
+.base-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("/trama.png");
+  background-size: 450px;
+}
+
+.home-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+//--------------------------- menu mobile
+
+.menu-mobile-container {
+  display: none;
+  &.active {
+    display: block;
+  }
+  .menu-mobile {
+    width: 75%;
+    height: 100vh;
+    max-width: 250px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    transition: right .5s;
+    z-index: 2;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        padding-left: 2em;
+        display: flex;
+        align-items: center;
+        height: 45px;
+        font-size: 15px;
+      }
+      .back-container {
+        height: 56px;
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 1em;
+        .back {
+          display: block;
+          height: 20px;
+        }
+      }
+    }
+  }
+  .overlay {
+    background-color: black;
+    opacity: .5;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+}
+
+//--------------------------- nav bar
+
+.home-navigation {
+  height: 65px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 3px 3px 9px -5px rgba(0, 0, 0, 0.75);
+  .home-navigation-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+    .logo-color {
+      padding: 0;
+      height: 70%;
+      img {
+        height: 100%;
+      }
+    }
+    .links-container {
+      ul {
+        align-items: center;
+        list-style: none;
+        display: flex;
+        margin-bottom: 0;
+        li {
+          margin: 0 9px;
+          a {
+            color: grey;
+            font-size: 1em;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 500;
+            &:hover {
+              color: $primaryColor;
+            }
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .menu-mobile-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+//--------------------------- intro
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 700px;
+  background-color: white;
+  justify-content: center;
+  .title {
+      font-family:'Lato', sans-serif;
+      color: $primaryColor;
+      font-weight: 500;
+      margin-bottom: 1em;
+      font-size: 3.5em;
+      line-height: 1.2em;
+  }
+  .base-text {
+    font-weight: 500;
+    span {
+      line-height: 2.5em;
+      font-style: italic;
+      font-weight: 400;
+    }
+  }
+  .intro-image-container {
+    background-color: lightgrey;
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    padding: 2em;
+    justify-content: space-between;
+    box-shadow: inset 0 0 0 104px white;
+    .intro-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      .intro-icon {
+        height: 120px;
+      }
+    }
+  }
+}
+
+//--------------------------- descripción
+
+.Description {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 700px;
+  background-color: lighten($primaryColor, 44%);
+  .text-container {
+    width: 45%;
+    .title {
+      font-family:'Lato', sans-serif;
+      color: $primaryColor;
+      font-weight: 500;
+      margin-bottom: 1em;
+      font-size: 3.5em;
+      line-height: 1.2em;
+    }
+    a {
+      margin-top: 2em;
+    }
+  }
+  svg {
+    height: 300px;
+  }
+}
+
+//--------------------------- selección de formulario
+
+.form-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lighten($primaryColor, 44%);
+  width: 100%;
+  height: 700px;
+  justify-content: center;
+  .base-text {
+    font-size: 1.4em;
+    text-align: center;
+  }
+}
+
+.form-selection {
+  display: flex;
+  margin-top: 4em;
+  width: 600px;
+  justify-content: space-around;
+  .selection-option-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+    cursor: pointer;
+    text-decoration: none;
+    img {
+      height: 200px;
+      transition: transform .5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .primary-text {
+      margin-top: 2em;
+      font-size: 1.4em;
+    }
+  }
+}
+
+.developed-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo-eryx {
+    height: 42px;
+    padding-top: 10px;
+  }
+}
+
+//--------------------------- tarjetas de consejos
+
+.cards-tip-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  .secondary-text {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.3em;
+  }
+}
+
+.card-tip {
+  text-decoration: none;
+  background-color: lighten(lightgrey, 13%);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.35);
+  width: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  margin: 2em;
+  text-align: center;
+  height: 370px;
+  .secondary-text {
+    margin-top: .8em;
+    font-weight: 500;
+  }
+  img {
+    height: 80px;
+    margin: 1.5em 0;
+  }
+  p span {
+    color: $secondaryColor;
+  }
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 10px 8px 15px 0 rgba(0, 0, 0, 0.30);
+    transform: scale(1.01);
+    transition: scale 1s;
+  }
+}
+
+//--------------------------- presentación de ODS
+
+.ODS-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  padding: 0 2em 6em;
+  .secondary-text {
+    font-weight: 500;
+    margin-bottom: 2em;
+  }
+  .ODS-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    a {
+      margin: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border-radius: 1em;
+      padding: 15px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      height: 90px;
+      width: 300px;
+      margin-bottom: 1em;
+
+
+      .ODS-description{
+        display: flex;
+        align-items: center;
+        color: white;
+        .ODS-number {
+          margin-right: 15px;
+          font-family: 'Oswald', sans-serif;
+          font-size: 3em;
+          width: 45px;
+          text-align: center;
+        }
+       .ODS-type{
+         width: 124px;
+         text-transform: uppercase;
+         font-size: 0.8em;
+         margin-right: 15px;
+       }
+      }
+      img {
+        height: 85%;
+      }
+      &:hover {
+        transform: scale(1.05);
+        transition: scale 1s;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//--------------------------- contacto
+.Contact-us {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 5em 1em 0;
+  width: 100%;
+  .secondary-text {
+    font-weight: 500;
+  }
+  .logos-container {
+    display: flex;
+    align-items: center;
+    margin: 4em 0;
+    a {
+      margin: 2em;
+      cursor: pointer;
+      img {
+        height: 70px;
+      }
+
+    }
+  }
+  .tertiary-text {
+    width: 600px;
+    text-align: center;
+  }
+  .contact-text{
+    margin-top: 2em;
+    text-align: center;
+  }
+  .social-media-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5em auto;
+    a {
+      img {
+        height: 25px;
+        filter: grayscale(100%);
+        &:hover {
+          filter: grayscale(0)
+        }
+      }
+      margin: 0 1em;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+

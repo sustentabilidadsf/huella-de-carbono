@@ -1,0 +1,180 @@
+@media only screen and (max-width: 1024px) {
+
+  .result-container {
+    height: auto;
+    .resume-results-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3em;
+      .result-content {
+        order: 2;
+        margin: 6em 0 3em;
+        .resume-results-content {
+          .primary-text {
+            text-align: center;
+          }
+          .huella-result-text-container {
+            justify-content: center;
+            .huella-result-text {
+              font-size: 2em;
+            }
+          }
+        }
+        .compensation-tips-containers {
+          .primary-text {
+            text-align: center;
+          }
+          .compensation-tips {
+            justify-content: center;
+            a:first-child {
+              margin-left: 15px;
+            }
+          }
+        }
+        .main-button {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+
+  /// ------------------------------------ estilos para ajustes vertical
+
+@media only screen and (max-height: 650px) {
+  .result-container {
+    padding-top: 2em;
+    height: auto;
+  }
+}
+
+/// ------------------------------------ fin estilos para ajustes vertical
+
+
+
+@media only screen and (max-width: 568px) {
+  .result-container .resume-results-container {
+    margin-top: 0;
+    .info-graphic-container {
+      transform: scale(.75);
+    }
+    .result-content {
+      margin: 0;
+      font-size: 14px;
+      .resume-results-content {
+        .huella-result-text-container {
+          .huella-result-text {
+            font-size: 2em;
+          }
+          a .icon-info {
+            height: 20px;
+            margin-left: 10px;
+          }
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          li {
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 7px 0;
+            width: 90%;
+            &:last-child {
+              flex-direction: row;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              margin-top: 12px;
+              .data {
+                width: 130px;
+                .huella-amount {
+                  margin-left: 5px;
+                }
+                .resume-bar-container {
+                  width: 0px;
+                }
+              }
+            }
+            .category-title {
+              font-size: 1.4em;
+              margin-bottom: 5px;
+              &:last-child {
+                flex-direction: row;
+              }
+            }
+            .data {
+              justify-content: space-between;
+              width: 100%;
+              .huella-amount {
+                text-align: left;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .screenshot {
+    .mobileIcon {
+      display: block;
+      margin-right: 10px;
+    }
+    .desktopIcon {
+      display: none;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  .result-container {
+    padding-top: 0 !important;
+    margin-top: -4em;
+    .resume-results-container {
+      .info-graphic-container {
+        transform: scale(0.60);
+
+        .indicator-container .indicator {
+          .amount-co2 {
+            font-size: 1.3em;
+          }
+          .label {
+            font-size: 1.2em;
+            text-align: center;
+
+          }
+        }
+      }
+      .result-content {
+        margin-top: -3em;
+        .resume-results-content {
+          .huella-result-text-container .huella-result-text {
+            font-size: 1.7em;
+          }
+        }
+        .compensation-tips-containers .compensation-tips {
+          justify-content: space-evenly;
+          padding: 0 10px;
+          a {
+            margin: 0;
+            height: 45px;
+            width: 45px;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .screenshot{
+    font-size: 1.2em;
+  }
+
+}

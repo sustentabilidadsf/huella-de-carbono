@@ -1,0 +1,687 @@
+svg#Transporte {
+  enable-background: new 0 0 503.3 335.2;
+  position: relative;
+  #ciudad {
+    animation: ciudad 8s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes ciudad {
+    0% {
+      transform: scale(1.78) translate(-19%, -34%);
+    }
+    100% {
+      transform: scale(1.78) translate(0%, -34%);
+    }
+  }
+
+  #avion {
+    transform: translateX(-20%);
+    animation: volar 10s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes volar {
+    0% {
+      transform: translateX(-20%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  #colectivo {
+    animation: colectivo 10s infinite;
+  }
+
+  @keyframes colectivo {
+    0% {
+      transform: translateX(5%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(5%);
+    }
+  }
+
+  #autoBlanco {
+    animation: auto 5s infinite;
+  }
+
+  @keyframes auto {
+    0% {
+      transform: translateX(1%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(1%);
+    }
+  }
+
+  #lineasPuntos {
+    animation: lineas .5s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes lineas {
+    0% {
+      transform: scale(1.5) translate(-20%, -27%);
+    }
+    100% {
+      transform: scale(1.5) translate(0, -27%);
+    }
+  }
+
+  .st0 {
+    fill: #6FB6F8;
+  }
+  .st1 {
+    fill: #A6A9AF;
+  }
+  .st2 {
+    fill: #FFFFFF;
+  }
+  .st3 {
+    fill: #3F5E77;
+  }
+  .st4 {
+    fill: #FFC821;
+  }
+  .st5 {
+    fill: #BA8531;
+  }
+  .st6 {
+    fill: #2B2A28;
+  }
+  .st7 {
+    fill: #BCBCBC;
+  }
+  .st8 {
+    fill: #3E3E3D;
+  }
+  .st9 {
+    fill: #990737;
+  }
+  .st10 {
+    fill: #11130B;
+  }
+  .st11 {
+    fill: #25251E;
+  }
+  .st12 {
+    fill: #BAB9B9;
+  }
+  .st13 {
+    fill: #5C5C5D;
+  }
+  .st14 {
+    fill: #347E25;
+  }
+  .st15 {
+    fill: #F38016;
+  }
+  .st16 {
+    fill: #AD0000;
+  }
+  .st17 {
+    fill: #6C7F8E;
+  }
+  .st18 {
+    fill: #000601;
+  }
+  .st19 {
+    fill: #EB2F2B;
+  }
+  .st20 {
+    fill: #9A2F2F;
+  }
+  .st21 {
+    fill: #707070;
+  }
+
+}
+
+svg#Comida {
+  .st0 {
+    fill: none;
+    stroke: #C4C4C4;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+  .st1 {
+    fill: #E5E5E5;
+  }
+  .st2 {
+    fill: #CECACA;
+  }
+  .st3 {
+    fill: #74B050;
+  }
+  .st4 {
+    fill: #5B9933;
+  }
+  .st5 {
+    fill: #B3B7B7;
+  }
+  .st6 {
+    fill: #FBD15B;
+  }
+  .st7 {
+    fill: #EB2F2B;
+  }
+  .st8 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 0.5;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+  .st9 {
+    fill: #633C38;
+  }
+  .st10 {
+    fill: #70432A;
+  }
+  .st11 {
+    fill: #AA6A53;
+  }
+  .st12 {
+    fill: #3C2126;
+  }
+  .st13 {
+    fill: #FFFFFF;
+  }
+  .st14 {
+    fill: #F2873A;
+  }
+  .st15 {
+    fill: #F3AC93;
+  }
+  .st16 {
+    fill: #D61632;
+  }
+  .st17 {
+    fill: #DD7450;
+  }
+
+  #humo {
+    transform: translateX(-20%);
+    animation: humo 1s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes humo {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-6%);
+    }
+  }
+}
+
+svg#Sobre_vos {
+  .st0 {
+    fill: #F1EDEC;
+  }
+  .st1 {
+    fill: #6FB6F8;
+  }
+  .st2 {
+    fill: #865EA8;
+  }
+  .st3 {
+    fill: #6A407B;
+  }
+  .st4 {
+    fill: #EBCFBB;
+  }
+  .st5 {
+    fill: #E6AB7F;
+  }
+  .st6 {
+    fill: #19243F;
+  }
+  .st7 {
+    fill: #D86D55;
+  }
+  .st8 {
+    fill: #DB4545;
+  }
+  .st9 {
+    fill: #9A2F2F;
+  }
+  .st10 {
+    fill: #ECD0BB;
+  }
+  .st11 {
+    fill: #E6AA7E;
+  }
+  .st12 {
+    fill: #70432A;
+  }
+  .st13 {
+    fill: #AD4736;
+  }
+  .st14 {
+    fill: #FBD15B;
+  }
+  .st15 {
+    fill: #FCEED0;
+  }
+  .st16 {
+    fill: #DEA63E;
+  }
+  .st17 {
+    fill: #192541;
+  }
+  .st18 {
+    fill: #ECD0BC;
+  }
+  .st19 {
+    fill: #FFFFFF;
+  }
+  .st20 {
+    fill: #74B050;
+  }
+  #ojos1_2_ {
+    animation: ojos 7s infinite;
+  }
+
+  #ojos2_2_ {
+    animation: ojos 7s infinite;
+    animation-delay: 3s;
+  }
+
+  #ojos3_2_ {
+    animation: ojos 7s infinite;
+    animation-delay: 5s;
+  }
+
+  @keyframes ojos {
+    0% {
+      opacity: 1;
+    }
+    47% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    52% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+}
+
+svg#Energia {
+  .st0 {
+    fill: #D7F3F3;
+  }
+  .st1 {
+    fill: #FFFFFF;
+  }
+  .st2 {
+    fill: #303334;
+  }
+  .st3 {
+    fill: #A6A9AF;
+  }
+  .st4 {
+    fill: #CD8A51;
+  }
+  .st5 {
+    fill: #455660;
+  }
+  .st6 {
+    fill: #DEDFE1;
+  }
+  .st7 {
+    fill: #848A8F;
+  }
+  .st8 {
+    fill: #277FB2;
+  }
+  .st9 {
+    fill: #57C9F9;
+  }
+  .st10 {
+    fill: #6FB6F8;
+  }
+  .st11 {
+    fill: none;
+    stroke: #CD8A51;
+    stroke-miterlimit: 10;
+  }
+  .st12 {
+    fill: #B6C241;
+  }
+  .st13 {
+    fill: #74B050;
+  }
+  .st14 {
+    fill: #347E25;
+  }
+  .st15 {
+    fill: #FBD15B;
+  }
+  .st16 {
+    fill: #F2873A;
+  }
+  .st17 {
+    fill: #EB2F2B;
+  }
+  #aspas {
+    animation: ventilar 1s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes ventilar {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: 50.7% 25%;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: 50.7% 25%;
+    }
+  }
+  #vapor {
+    animation: hervir .5s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes hervir {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5%);
+    }
+  }
+
+  #viento {
+    animation: refrescar 1s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes refrescar {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateX(12%);
+    }
+  }
+
+  #indicador {
+    animation: oscilar 1s infinite;
+  }
+  @keyframes oscilar {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: 78.5% 84%;
+    }
+    30% {
+      transform: rotate(40deg);
+      transform-origin: 78.5% 84%;
+    }
+    60% {
+      transform: rotate(25deg);
+      transform-origin: 78.5% 84%;
+    }
+    90% {
+      transform: rotate(40deg);
+      transform-origin: 78.5% 84%;
+    }
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 78.5% 84%;
+    }
+  }
+}
+
+
+
+svg#Reciclaje {
+  .st0{fill:#ECD0BC;}
+  .st1{fill:#B6DDE8;}
+  .st2{fill:#D7F3F3;}
+  .st3{fill:#6FB6F8;}
+  .st4{fill:#E5E5E5;}
+  .st5{fill:#F2FBFC;}
+  .st6{fill:#3388BC;}
+  .st7{fill:#60DB71;}
+  .st8{fill:#6BF27F;}
+  .st9{fill:#55C566;}
+  .st10{fill:#26455E;}
+  .st11{fill:#FFE471;}
+  .st12{fill:none;stroke:#EB2F2B;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+  .st13{fill:#CFE4E5;}
+  .st14{fill:#F2873A;}
+  .st15{fill:#FBD15B;}
+  .st16{fill:#DEA63E;}
+  .st17{fill:#FFFFFF;}
+
+  #brazoIzq {
+    animation: aparecer 15s infinite;
+  }
+
+@keyframes aparecer {
+  0% {
+    transform: translateX(-50%);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  16% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+  #brazoDer {
+    animation: aparecer2 15s infinite;
+    animation-delay: 7s;
+    transform: translateX(50%);
+  }
+
+  @keyframes aparecer2 {
+    0% {
+      transform: translateX(50%);
+    }
+    16% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+
+#manoIzq {
+  animation: abrir 15s infinite;
+}
+
+  #manoDer {
+    animation: abrir 15s infinite;
+    animation-delay: 7s;
+  }
+
+@keyframes abrir {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#dedosIzq {
+  animation: soltar 15s infinite;
+}
+
+  #dedosDer {
+    animation: soltar 15s infinite;
+    animation-delay: 7s;
+  }
+
+@keyframes soltar {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#botellaIzq {
+  animation: caer 15s infinite;
+}
+
+  #botellaDer {
+    animation: caer 15s infinite;
+    animation-delay: 7s;
+  }
+
+@keyframes caer {
+  0% {
+    transform: translateY(0);
+  }
+  11% {
+    transform: translateY(0);
+  }
+  16% {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+  17% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+}
+}
+
+
+svg#Mundo{
+  .cls-1{isolation:isolate;}.cls-2{fill:#fff;}.cls-3{fill:#b4bec1;}.cls-4{fill:#6aa2cd;}.cls-5{fill:#457397;}.cls-6{fill:#a6c6e5;}.cls-7{fill:#e2dcb5;}.cls-8{fill:#a68f66;}.cls-9{fill:#dfdbba;}.cls-10{fill:#2c516e;}.cls-11{fill:#447196;}.cls-12{fill:#629ed0;}.cls-13{fill:#3a6483;}.cls-14{fill:#7c6458;}.cls-15{fill:#685548;}.cls-16{fill:#c6ab79;}.cls-17{fill:#669fcc;}.cls-18{fill:#f6f1c5;}.cls-19{fill:#b6b392;}.cls-20{fill:#629dcc;}.cls-21{fill:#b24435;}.cls-22{fill:#658587;}.cls-23{fill:#baaca9;}.cls-24{fill:#9c9d96;}.cls-25{fill:#cecece;mix-blend-mode:multiply;}.cls-26{fill:#b9ada9;}.cls-27{fill:#6e7465;}.cls-28{fill:#fffffe;}.cls-29{fill:#6b9e76;}.cls-30{fill:#548a5e;}.cls-31{fill:#5a4f44;}.cls-32{fill:#d75f39;}.cls-33{fill:#ec9140;}.cls-34{fill:#7f973c;}.cls-35{fill:#d5d557;}.cls-36{fill:#757430;}.cls-37{fill:#83b460;}.cls-38{fill:#59391a;}.cls-39{fill:#3b8f50;}.cls-40{fill:#43a24f;}.cls-41{fill:#b8cc6a;}.cls-42{fill:#85b665;}.cls-43{fill:#3a915b;}.cls-44{fill:#388a60;}.cls-45{fill:#363231;}.cls-46{fill:#cccccb;}.cls-47{fill:#b2adb0;}.cls-48{fill:#c74b38;}.cls-49{fill:#7f2f2b;}.cls-50{fill:#cce3f1;}.cls-51{fill:#89a3ac;}.cls-52{fill:#8ea1ac;}.cls-53{fill:#aec3ce;}.cls-54{fill:#cddde6;}.cls-55{fill:#e3f1f6;}.cls-56{fill:#2c6e8e;}.cls-57{fill:#459bd6;}.cls-58{fill:#6ebce7;}.cls-59{fill:#fbeff5;}.cls-60{fill:#cfc5c4;}.cls-61{fill:#a2908e;}.cls-62{fill:#a66a5c;}.cls-63{fill:#404145;}.cls-64{fill:#6a4239;}.cls-65{fill:#3e2b22;}.cls-66{fill:#eaeaeb;}.cls-67{fill:#efe459;}.cls-68{fill:#773f46;}.cls-69{fill:#616262;}.cls-70{fill:#c4966f;}.cls-71{fill:#544944;}.cls-72{fill:#907661;}.cls-73{fill:#363638;opacity:0.3;}.cls-74{fill:#9b9da5;}.cls-75{fill:#b8bac4;}.cls-76{fill:#3a68bb;}.cls-77{fill:#538bde;}.cls-78{fill:#31859d;}.cls-79{fill:#a7c164;}
+
+  #escenario{
+    animation: girar 90s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+
+    100% {
+      transform: rotate(360deg);
+      transform-origin: 50% 50%;
+    }
+    }
+
+}
+
+
+
+/// ------ animación para seleccion de Resultado
+
+
+
+.info-graphic-container{
+  .contaminacion{
+      animation: mostrar 10s;
+      animation-fill-mode: forwards
+  }
+
+
+  .indicator-container{
+    @keyframes aparecer3 {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+/// ------ animación para boton al hacer :focus
+
+@keyframes boton {
+  0% {
+    transform: scale(1.05);
+    transition: transform .1s;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/// ------ animación para boton info
+
+@keyframes info-beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+     transform: scale(1.1);
+    transition: transform .1s;
+   }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/// ------ animación para mensaje de screenshot
+
+@keyframes screenshotAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transition: visibility 2s;
+  }
+}

@@ -1,0 +1,253 @@
+$scaleGrey2: #DDDDDD;
+
+@media only screen and (max-width: 1024px) {
+
+  .main-container {
+    padding: 40px 20px 40px;
+    height: auto;
+    .form-selection-container {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .main-container {
+    order: 2;
+    flex-direction: column;
+    .header-mobile-container {
+      position: fixed;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      z-index: 5;
+      .header-mobile {
+        display: flex;
+        background-color: #ededed;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 40px;
+        color: #74b050;
+        font-size: 1.2em;
+        .back {
+          position: absolute;
+          left: 0;
+          height: 100%;
+          padding: 12px;
+          box-sizing: border-box;
+          cursor: pointer;
+        }
+      }
+
+    }
+    .nav-bar {
+      order: 2;
+      width: 100%;
+      height: 60px;
+      position: fixed;
+      bottom: 0;
+      z-index: 10;
+      .nav-bar-sections {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        height: 45px;
+        margin: 0;
+        justify-content: space-around;
+        max-width: 500px;
+
+        li {
+          margin: 0;
+          padding: 0;
+          .selected-bgd {
+            display: none;
+          }
+          .selected-bgd-mobile {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            transform: translateY(-1px);
+          }
+        }
+        .-active {
+          .icon-nav {
+            filter: brightness(1);
+          }
+          p {
+            color: #74b050;
+          }
+          .selected-bgd-mobile {
+            display: block;
+          }
+        }
+      }
+    }
+    .form-area {
+      max-width: 600px;
+      padding: 0 20px;
+      width: auto;
+      margin: 40px 0 100px;
+      justify-content: center;
+      height: 100%;
+      font-size: 15px;
+      .title-section {
+        display: block;
+        font-size: 1.5em;
+        font-weight: 500;
+        color: #74b050;
+        padding: 30px 0;
+        margin: 0;
+        text-align: center;
+        background-color: white;
+      }
+      .image-container {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom: 30px;
+        svg {
+          width: 100%;
+        }
+
+      }
+      .question-area {
+        margin: 0;
+      }
+    }
+  }
+  .nav-bar ul li p, .logoSSF, .selected-bgd, .nav-bar-title {
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+  .main-container .form-selection-container {
+    padding: 0 20px;
+    display: flex;
+    .base-text {
+    }
+    .form-selection {
+      display: block;
+      width: auto;
+      .selection-option-container {
+        margin-bottom: 4em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        img {
+          height: 175px;
+        }
+        p {
+          margin-top: 1em;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 568px) {
+
+  .main-container .form-selection-container {
+    .base-text {
+      font-size: 1.2em;
+    }
+    .form-selection {
+      margin-top: 2em;
+      .selection-option-container {
+        margin-bottom: 2em;
+        img {
+          height: 140px;
+        }
+
+      }
+    }
+  }
+
+
+  .main-container {
+    p {
+      font-size: 14px;
+    }
+    .nav-bar {
+      bottom: 0;
+      position: fixed;
+      height: 40px;
+      z-index: 10;
+      .nav-bar-sections {
+        height: 100%;
+        max-width: 320px;
+        li {
+          padding-bottom: 5px;
+        }
+        .icon-nav {
+          height: 25px;
+          margin: 0 15px;
+
+        }
+      }
+
+    }
+    .header-mobile-container {
+      .title {
+        font-size: .8em;
+      }
+      .back {
+        width: 40px;
+        background-color: $scaleGrey2;
+      }
+    }
+    .form-area {
+      padding: 0 20px;
+      width: auto;
+      margin: 20px 0 20px;
+      height: 100%;
+      justify-content: center;
+      .title-section {
+        font-size: 1.3em;
+        padding: 15px 0;
+      }
+      .image-container {
+        margin-bottom: 20px;
+        padding: 0 28px;
+        box-sizing: border-box;
+      }
+      .question-area {
+        margin: 0;
+        min-height: inherit;
+        .primary-text {
+          font-size: 1.1em;
+        }
+        .input-label-container {
+          margin: 2em auto;
+          font-size: .8em;
+        }
+      }
+      input[type="submit"] {
+        height: 35px;
+        width: 130px;
+        padding: 15px 20px;
+        line-height: 0;
+      }
+      .progress {
+        margin: 5px auto;
+        .progress-item {
+          height: 4px;
+          width: 4px;
+        }
+      }
+    }
+
+    ul.section-progress {
+      margin: 20px auto 0;
+    }
+  }
+}

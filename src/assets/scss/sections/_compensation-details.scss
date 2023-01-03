@@ -1,0 +1,120 @@
+.compensation-details-container {
+  max-width: 900px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  min-height: 100vh;
+  .amountHC {
+    font-size: 1.7em;
+    color: grey;
+    margin-bottom: 1em;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+  }
+  .donation-payment-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    .donation-payment-text {
+      width: 100%;
+    }
+    .donation-payment-button {
+      margin-top: 20px;
+    }
+    .primary-text {
+      color: $primaryColor;
+      span {
+        color: red;
+        font-weight: 700;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .compensation-description {
+    display: flex;
+    align-items: center;
+    margin: 3em 0;
+    img {
+      width: 50%;
+    }
+  }
+
+  .items-included-container {
+    position: relative;
+    border: 1px solid darkgrey;
+    border-radius: .5em;
+    padding: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .items-title {
+      background-color: white;
+      color: darkgray;
+      display: inline-block;
+      padding: 0 10px;
+      position: absolute;
+      font-size: 1.2em;
+      top: -17px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      width: 48%;
+      img {
+        height: 50px;
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+  .ODS-container {
+    margin-top: 3em;
+    .primary-text {
+      text-align: center;
+      margin-bottom: 10px;
+      color: $primaryColor;
+    }
+    .ODS-items {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px auto;
+      a {
+        margin: 10px;
+        cursor: pointer;
+        height: 80px;
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+  }
+
+  .compensation-sponsor{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    .base-text{
+      width: 210px;
+      text-align: right;
+      margin-right: 20px;
+    }
+    img{
+      height: 60px;
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@media only screen and (max-width: 700px) {
+  .modal-dialog {
+    max-width: inherit;
+    width: 95%;
+    .modal-body {
+      padding: 1.5em 2.5em 1.5em 3.5em;
+      .modal-tips-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        .image-container {
+          width: 100px;
+          margin: auto;
+        }
+        .text-container {
+          .primary-text {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+
+  .modal-tips-content .text-container {
+    font-size: 1em;
+  }
+
+  .details-carbonFootprint-result {
+    font-size: 14px;
+    img.icon-info {
+      height: 25px;
+      margin-bottom: 15px;
+    }
+  }
+
+}

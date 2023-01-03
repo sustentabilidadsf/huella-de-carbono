@@ -1,0 +1,92 @@
+.feedback-container {
+  height: 100vh;
+  margin: -40px auto 0;
+  display: flex;
+}
+
+.feedback-area {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  text-align: center;
+  .image-container {
+    width: 350px;
+  }
+  .information-container {
+    max-width: 500px;
+    margin-top: 1em;
+    .progress-bar-container {
+      height: 43px;
+      width: 100%;
+      position: relative;
+      margin: 20px auto;
+      .progress-indicator {
+        padding: 3px 8px;
+        border-radius: 5px;
+        background-color: #c3d7ae;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        position: absolute;
+        transform: translate(-50%);
+        p {
+          font-size: 14px;
+        }
+        &::after {
+          content: "";
+          background-color: #c3d7ae;
+          transform: rotate(45deg);
+          position: absolute;
+          bottom: -3px;
+          height: 5px;
+          width: 5px;
+          z-index: -1;
+        }
+      }
+      .form-progress-bar {
+        position: absolute;
+        right: 25%;
+        width: 50%;
+        box-sizing: border-box;
+        height: 14px;
+        border: 2px solid #74b050;
+        border-radius: 10px;
+        overflow: hidden;
+        bottom: 0;
+        .progress-amount {
+          height: 100%;
+          background-color: #74b050;
+          opacity: .5;
+        }
+
+      }
+    }
+  }
+  .button {
+    margin-top: 20px;
+    border-style: none;
+  }
+}
+
+.button, input[type="submit"] {
+  border-radius: 50px;
+  background-color: $secondaryColor;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 8px 15px;
+  &:focus {
+    outline: none;
+    animation: boton .2s;
+    animation-fill-mode: forwards;
+  }
+  &:hover {
+    background-color: darken($secondaryColor, 8);
+    text-decoration: none;
+    color: white;
+  }
+}

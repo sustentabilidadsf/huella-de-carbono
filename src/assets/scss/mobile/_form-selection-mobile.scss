@@ -1,0 +1,235 @@
+@media only screen and (max-width: 950px) {
+  .Description .text-container .title {
+    font-size: 2.5em;
+  }
+  .Intro .title {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Intro {
+    .intro-title {
+      font-size: 2.2em;
+    }
+    .intro-image-container {
+      max-width: 600px;
+      box-shadow: inset 0 0 0 95px #ffffff;
+      .intro-items {
+        .intro-icon {
+          height: 100px;
+        }
+        p {
+          margin: 0
+        }
+      }
+    }
+    .main-button {
+      font-size: 1em;
+    }
+  }
+  .Description {
+    font-size: 14px;
+    height: 600px;
+    svg {
+      height: 250px;
+    }
+  }
+  .form-selection-container {
+    font-size: 14px;
+    height: 600px;
+    .form-selection {
+      width: 500px;
+      .selection-option-container img {
+        height: 150px;
+      }
+    }
+  }
+
+  .cards-tip-container {
+    .card-tip {
+      width: 230px;
+    }
+  }
+
+  .Contact-us {
+    .logos-container a img {
+      height: 60px;
+    }
+    .tertiary-text {
+      width: 520px;
+    }
+    .social-media-container a img {
+      height: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .home-navigation .home-navigation-content {
+    .links-container ul {
+      display: none;
+    }
+  }
+
+  .Intro {
+    font-size: 15px;
+    height: 600px;
+    .intro-image-container {
+      max-width: 450px;
+      box-shadow: inset 0 0 0 82px #ffffff;
+      .intro-items .intro-icon {
+        height: 80px;
+      }
+    }
+  }
+
+  .Description {
+    flex-direction: column;
+    height: auto;
+    padding: 5em 0;
+    margin-top: 2em;
+    .text-container {
+      width: 100%;
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .base-text {
+        margin: 0 2em;
+      }
+    }
+    svg {
+      order: 2;
+      height: 220px;
+    }
+  }
+
+  .cards-tip-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 6em 0;
+  }
+
+  .ODS-presentation {
+    text-align: center;
+    padding: 0 2em 5em;
+  }
+
+  .Contact-us {
+    padding: 5em 2em 0;
+    .logos-container {
+      margin: 2em;
+      flex-wrap: wrap;
+      justify-content: center;
+      a {
+        margin: 1em 2em;
+      }
+    }
+    .tertiary-text {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-navigation {
+    height: 56px;
+    .home-navigation-content .links-container .menu-mobile-icon {
+      display: block;
+      img {
+        height: 22px;
+      }
+    }
+  }
+
+  .show-menu {
+    right: 0 !important;
+  }
+
+  .active {
+    a {
+      color: $primaryColor;
+      font-weight: 500;
+    }
+  }
+
+  .Intro {
+    height: 650px;
+    .intro-title {
+      font-size: 2em;
+    }
+    .base-text {
+      margin: 0 1em;
+    }
+    .intro-image-container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: transparent;
+      box-shadow: none;
+      margin-bottom: 1em;
+    }
+  }
+
+  .Description {
+    .text-container .title {
+      text-align: center;
+    }
+  }
+
+  .form-selection-container {
+    padding: 2em;
+    height: auto;
+    .form-selection {
+      width: auto;
+      flex-direction: column;
+      .selection-option-container .primary-text {
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .Intro {
+    height: 650px;
+  }
+
+  .ODS-presentation .ODS-container {
+    padding: 0;
+    a {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
+  .ODS-presentation {
+    .secondary-text {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+
+    .ODS-container a .ODS-description {
+    }
+    .ODS-type {
+      margin-right: 8px;
+    }
+    .ODS-number {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .ODS-presentation .ODS-container a .ODS-description {
+    .ODS-number {
+      margin-right: 8px;
+    }
+    .ODS-type{
+      margin-right: 8px;
+      width: 100px;
+    }
+  }
+
+}
