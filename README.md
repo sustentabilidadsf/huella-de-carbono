@@ -6,11 +6,7 @@
 Es necesario tener instaladas las ultimas versiones LTS de **Node**, **npm** y **yarn**
 
 #### Clone
-```git clone https://github.com/eryxcoop/ssf.git```
-
-o
-
-```git clone git@github.com:eryxcoop/ssf.git```
+```git clone https://github.com/sustentabilidadsf/huella-de-carbono```
 
 #### Instalar dependencias
 Ejecutar el comando ```yarn install``` en el root del proyecto
